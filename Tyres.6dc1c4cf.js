@@ -118,9 +118,30 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"Focm":[function(require,module,exports) {
-var car = document.getElementById('car'); // const cars = document.querySelectorAll('car1').addEventListener('click', ()=> document.location.href = 'car-suv-tyres.html')
-
+var car = document.getElementById('car');
 car.addEventListener('click', function () {
   document.location.href = 'car-suv-tyres.html';
-});
+}); // gsap.registerPlugin(ScrollTrigger);
+// const sections = gsap.utils.toArray("section");
+// const lastIndex = sections.length - 1;
+// sections.forEach((section, i) => {
+//   section._bg = section.querySelector(".bg");
+//   section._h1 = section.querySelector("h1");
+//   section._h3 = section.querySelector("h3");
+//   section._h4 = section.querySelector("h4");
+//   ScrollTrigger.create({ 
+//     trigger: section,
+//     start: ()=> i==0 ? "top top" : "top bottom", // The FIRST section will use a different start value than the rest
+//     end: ()=> i==lastIndex ? "top top" : "bottom top", // The LAST section will use a different start value than the rest    
+//     onRefresh: self => { // onRefresh (so it gets reset upon resize), create a timeline that moves the h1 + bg vertically      
+//       section._tl = gsap.timeline({paused:true, defaults:{ease:'none', overwrite:'auto'}}) 
+//       .fromTo(section._h1, {y:()=> i==0 ? 0 : (innerHeight/2)*1.25}, {y:()=> i==lastIndex ? 0 : (-innerHeight/2)*1.5}, 0)
+//       .fromTo(section._h3, {x:()=> i==0 ? 0 : (innerHeight/2)*1.5}, {x:()=> i==lastIndex ? 0 : (-innerHeight/2)*1.5}, 0)
+//       .fromTo(section._h4, {y:()=> i==0 ? 0 : (innerHeight/2)*2}, {y:()=> i==lastIndex ? 0 : (-innerHeight/2)*1.5}, 0)
+//       .fromTo(section._bg, {y:()=> i==0 ? -innerHeight/2 : 0}, {y:()=> i==lastIndex ? -innerHeight/2 : -innerHeight}, 0)	  	  
+//       .progress(self.progress); //use progress to position the timeline correctly      
+//     },
+//     onUpdate: self => { gsap.to(section._tl, {duration:0.75, progress:self.progress}); }
+//   });
+// });
 },{}]},{},["Focm"], null)

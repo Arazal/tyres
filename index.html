@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster&display=swap" rel="stylesheet">
-    <title>Find Tyres</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster&family=Roboto+Mono:wght@600&family=Spline+Sans+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>GSTYRES</title>
 </head>
-<body>
-    <header class="sans-serif">
-        <div class="cover bg-left bg-center-l" style="background-image: url(homepage-splash.733f7fc7.jpeg)">
-          <div class="pb5 pb6-m pb7-l">
-            <nav class="dt w-100 mw8 center"> 
-              <div class="dtc w2 v-mid pa3">
-                <a href="/" class="dib w5 h2 pa1  b--white-90 grow-large border-box">
-                    <figure class="icon" id="icon">
-                        <img id="logo" src="brand-logo-light-default@3x.1b274157.png" alt="icon">
-                      </figure>
-                </a>
-              </div>
-              <div class="dtc v-mid tr pa3"> 
-                <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/">Pricing</a> 
-                <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/">About</a> 
-              </div>
-            </nav> 
-            <div class="tc-l mt4 mt5-m mt6-l ph3">
-              <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">CHOOSE YOUR ENGINES</h1>
-              <h2 class="fw1 f3 white-80 mt3 mb4">Welcome to Vredestein United Kingdom, we have tyres for all vehicles and applications</h2>
-              <a class="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Call us</a>
-              <span class="dib v-mid ph3 white-70 mb3">or</span>
-              <a class="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="car-suv-tyres.html">Email us</a>
+
+<body class="bg-dark">
+
+    <!-- NAVBAR GOES HERE -->
+    <nav class="navbar bg-dark opacity-75 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand font-monospace text-white-50" href="#">
+                <img src="tyre-logo.ae9f4fd2.svg" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                GSTYRES
+            </a>
+            <a class="navbar-brand font-monospace text-white-50" href="#">
+                About
+            </a>
+        </div>
+    </nav>
+
+    <main class="clearfix">
+        <figure class="mainbanner">
+            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="white-car_w_200.2279965d.jpg 200w,white-car_w_1099.744ffc86.jpg 1099w,white-car_w_1400.d19ce8ae.jpg 1400w" src="white-car_w_1400.d19ce8ae.jpg" alt="">
+            <figcaption>
+                <h1><span class="slogan">LIFE</span>In Motion</h1>
+
+            </figcaption>
+        </figure>
+
+
+
+
+        <!-- <section class="sec">
+            <div id="slide1" class="bg"></div>
+            <div class="texts">
+                <h1 class="hsec">Express Business</h1>
+            
             </div>
-          </div>
-        </div> 
-      </header>
+        </section> -->
 
-      <div id="vehicle-types" class="mt3">
-        <div class="vehicle" id="car">
-          <div class="vehicle-svg">
-            <img class="svg-color" src="car-svgrepo-com.a7c21a24.svg">
-          </div>
-          <div class="vehicle-text">
-            CAR, SUV & VAN
-          </div>
-        </div>
-        <div class="vehicle">
-          <div class="vehicle-svg">
-            <img src="classic-car-svgrepo-com.e8178936.svg">
-          </div>
-          <div class="vehicle-text">
-            CLASSIC
-          </div>
-        </div>
-        <div class="vehicle">
-          <div class="vehicle-svg">
-            <img src="bicycle-svgrepo-com.b5dc237a.svg">
-          </div>
-          <div class="vehicle-text">
-            BICYCLE
-          </div>
-        </div>
-        <div class="vehicle">
-          <div class="vehicle-svg">
-            <img src="tractor-svgrepo-com.c2e4e711.svg">
-          </div>
-          <div class="vehicle-text">
-            AGRICULTURAL & INDUSTRIAL
-          </div>
-        </div>  
-      </div>
+        <!-- MAIN BANNER -->
+        <div id="vehicle-container">
+            <div>
+                <h1 class="f3 f2-m f1-l fw2 white-90 mv3">
+                    CHOOSE YOUR ENGINES
+                </h1>
+                <h2 class="f5 f4-m f3-l fw2 white-50 mt0 lh-copy">
+                    we have tyres for all vehicles and applications
+                </h2>
 
 
-      <footer class="pv4 ph3 ph5-m ph6-l mid-gray mt3">
-        <small class="f6 db tc">© 2022 <b class="ttu">Vredestein Inc</b>., All Rights Reserved</small>
-        <div class="tc mt3">
-          <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
-          <a href="/terms/" title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
-          <a href="/privacy/" title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
+            </div>
+
+
+            <div id="vehicle-types" class="mt3">
+                <div id="car" class="vehicle">
+                    <div class="vehicle-svg">   
+                        <img class="svg-color" src="car-svgrepo-com.44fdcb8f.svg">
+                    </div>
+                    <div class="white-50 vehicle-text">
+                        CAR, SUV & VAN
+                    </div>
+                </div>
+                <div class="vehicle white-50">
+                    <div class="vehicle-svg">
+                        <img class="svg-color" src="classic-car-svgrepo-com.8b134bc6.svg">
+                    </div>
+                    <div class="vehicle-text">
+                        CLASSIC
+                    </div>
+                </div>
+                <div class="vehicle white-50">
+                    <div class="vehicle-svg">
+                        <img src="bicycle-svgrepo-com.aa356cf8.svg">
+                    </div>
+                    <div class="vehicle-text">
+                        BICYCLE
+                    </div>
+                </div>
+                <div class="vehicle white-50">
+                    <div class="vehicle-svg">
+                        <img src="tractor-svgrepo-com.dbb81746.svg">
+                    </div>
+                    <div class="vehicle-text">
+                        AGRICULTURAL & INDUSTRIAL
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
-      
-    <script src="Tyres.6953029a.js"></script>
-</body>
+
+        <script src="Tyres.6dc1c4cf.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+        <!-- <script src="https://unpkg.com/vue@next"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</main></body>
+
 </html>
